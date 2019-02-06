@@ -1,4 +1,5 @@
+esp_alph = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
+
 def alphabetize(arr)
-  esp_alph = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
-  arr.sort_by esp_alph.split
+  arr.sort_by{|a| a.split("").map {|char| esp_alph.index(char)}
 end
