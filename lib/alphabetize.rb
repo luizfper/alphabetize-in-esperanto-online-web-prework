@@ -1,4 +1,4 @@
 def alphabetize(arr)
-  ESPERANTO_ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
-  arr.sort_by{ |variable| ESPERANTO_ALPHABET[variable]}
+  esp_alph = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
+  arr.sort_by{ |variable| esp_alph[variable]}
 end
